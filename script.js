@@ -1,4 +1,4 @@
-
+<script>
 !(function (a) {
   "function" == typeof define && define.amd
     ? define(["jquery"], a)
@@ -306,3 +306,4 @@ $("#datepicker-input").datepicker({
 $("#datepicker-btn").click(function () {
   $("#datepicker-input").datepicker("show");
 });
+</script>
