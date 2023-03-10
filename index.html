@@ -1,94 +1,20 @@
 <head>
 
+    <link href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  
+  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js' id='jquery-min-js'> </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js' id='jquery-ui.min-js'> </script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' id='bootstrap.min.js'> </script>
+  <script src='script.js'> </script>
+  
 </head>
 
 <style>
-  
-  #calculakin-label-gregoriano {
-  grid-column: 1/5;
-
-}
-
-
-#calculakin-gregoriano-ano {
-  padding-right: 22px;
-  padding-left: 5px;
-}
-
-
-#calculakin-hoje {
-  position: absolute;
-  bottom: 5px;
-  right: 35px;
-  display: inline-block;
-  padding: 8px 8px;
-}
-
-
-#calculakin-inputgroup-gregoriano {
-  display: grid;
-  grid-template-columns: 40px 40px 85px 30px;
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  justify-content: center;
-  color: white;
-  font-size: 15px;
-  border: 2px solid white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-
-#calculakin-inputgroup-sincronario {
-  display: grid;
-  grid-template-columns: 40px 40px 150px 40px 30px;
-   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 300px;
-  margin: 0 auto;
-  justify-content: center;
-  color: white;
-  font-size: 15px;
-  border: 2px solid white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
  
-}
-
-
-@media (min-width: 576px) {
-  #calculakin-inputgroup-sincronario {
-    width: -webkit-calc(100% - 200px);
-    width: -moz-calc(100% - 200px);
-    width: calc(100% - 200px);
-  }
-}
-
-
-#calculakin-label-sincronario {
-  grid-column: 1/6;
-}
-
-.botao {
-  
-}
-
-.hoje {
-  position: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-  
   
   body {
     background-color: #292927;
@@ -959,74 +885,25 @@
 
 <br>
 
-<div id="calculakin-inputgroup-sincronario" class="mb-3 float-sm-right inputgroup-bordas">
+<div id="data_gregoriano" >
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
 
-  <label id="calculakin-label-sincronario" class="mb-0 text-center" for="">Data Sincronário <span id="data-ns"></span><small class="h6 ml-1"><a href="https://blog.kinzen.com.br/"><i class="fa fa-question-circle"></i></a></small></label>
+      <div class="datepicker-wrap">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="MM / DD / YYYY" id="datepicker-input">
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="datepicker-btn"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+      </span>
+        </div>
+        <!-- /input-group -->
+      </div>
 
-  <input class="form-control px-1 text-center input-transparente  primeiro-input-bordas" id="calculakin-sincronario-ns" tabindex="5" type="number" min="1">
-
-  <input class="form-control px-1 text-center input-transparente  rounded-0" id="calculakin-sincronario-ano" tabindex="5" type="number" min="1">
-
-  <select class="date-calc-mes form-control rounded-0 px-1 text-center input-transparente" id="calculakin-sincronario-lua" tabindex="6">
-
-    <option value="1">Lua 1 - Magnética</option>
-
-    <option value="2">Lua 2 - Lunar</option>
-
-    <option value="3">Lua 3 - Elétrica</option>
-
-    <option value="4">Lua 4 - Autoexistente</option>
-
-    <option value="5">Lua 5 - Harmônica</option>
-
-    <option value="6">Lua 6 - Rítmica</option>
-
-    <option value="7">Lua 7 - Ressonante</option>
-
-    <option value="8">Lua 8 - Galáctica</option>
-
-    <option value="9">Lua 9 - Solar</option>
-
-    <option value="10">Lua 10 - Planetária</option>
-
-    <option value="11">Lua 11 - Espectral</option>
-
-    <option value="12">Lua 12 - Cristal</option>
-
-    <option value="13">Lua 13 - Cósmica</option>
-
-    <option value="0">Dia Fora do Tempo</option>
-
-  </select>
-
-  <input class="form-control px-1 text-center input-transparente  rounded-0" id="calculakin-sincronario-dia" tabindex="5" type="number" min="0" max="28" value="1">
-
-  <button class="btn btn-primary btn-sm" type="button"><i class="botao"></i></button>
-
+    </div>
+  </div>
+</div>
 </div>
 
-<br>
-
-<div id="calculakin-inputgroup-gregoriano" class="mb-3 float-sm-left inputgroup-bordas">
-
-  <label id="calculakin-label-gregoriano" class="mb-0 text-center" for="">Data
-
-    Gregoriano</label>
-
-  <input class="form-control px-0 text-center input-transparente primeiro-input-bordas border-right-0" type="number" id="calculakin-gregoriano-dia">
-
-  <input class="form-control px-0 text-center input-transparente rounded-0 border-right-0 border-left-0" type="number" id="calculakin-gregoriano-mes">
-
-  <input class="form-control text-center input-transparente rounded-0 border-left-0" type="number" id="calculakin-gregoriano-ano">
-
-  <button class="btn btn-primary btn-sm" type="button"><i class="botao"></i></button>
-
-  <a href="" title="hoje" id="calculakin-hoje">
-
-    <i class="hoje"></i>
-
-  </a>
-
-</div>
 
 </div>
