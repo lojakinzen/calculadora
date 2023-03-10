@@ -2,779 +2,860 @@
 
 </head>
 
-
 <style>
- 
-body {
-  background-color: #292927;
-  margin: 10px 20px 20px 10px;
-  font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 3vw;
-  font-weight: 630;
-  line-height: 1.43
+  
+  #calculakin-label-gregoriano {
+  grid-column: 1/5;
+
+}
+
+
+#calculakin-gregoriano-ano {
+  padding-right: 22px;
+  padding-left: 5px;
+}
+
+
+#calculakin-hoje {
+  position: absolute;
+  bottom: 5px;
+  right: 35px;
+  display: inline-block;
+  padding: 8px 8px;
+}
+
+
+#calculakin-inputgroup-gregoriano {
+  display: grid;
+  grid-template-columns: 40px 40px 85px 30px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
   color: white;
-  text-align: center;
+  font-size: 15px;
+  border: 2px solid white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-  
-.plasma{
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-  
+
+#calculakin-inputgroup-sincronario {
+  display: grid;
+  grid-template-columns: 40px 40px 150px 40px 30px;
+   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  border: 2px solid white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
 }
 
-.plasma:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(0.9);
-      }
-  
-  #linha_plasma{
-    display: flex;
-    justify-content: center;
-    color: white;
+
+@media (min-width: 576px) {
+  #calculakin-inputgroup-sincronario {
+    width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+    width: calc(100% - 200px);
   }
+}
+
+
+#calculakin-label-sincronario {
+  grid-column: 1/6;
+}
+
+.botao {
+  color: black;
   
-  .dia1{
-border: 1px solid black;
-  border-top-left-radius: 10px;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
 }
 
-.dia1:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia2{
-border: 1px solid black;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
+.hoje {
+  position: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
+  
+  
+  body {
+    background-color: #292927;
+    margin: 10px 20px 20px 10px;
+    font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 3vw;
+    font-weight: 630;
+    line-height: 1.43 color: white;
+    text-align: center;
+  }
 
-.dia2:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
+  .plasma {
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
 
-.dia3{
-border: 1px solid black;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
+  .plasma:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(0.9);
+  }
 
-.dia3:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia4{
-border: 1px solid black;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia4:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia5{
-border: 1px solid black;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia5:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia6{
-border: 1px solid black;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia6:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia7{
-  border: 1px solid black;
-  border-top-right-radius: 10px;
-  background-color: #E64A4D;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia7:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-
-.dia8{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-.dia8:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia9{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia9:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia10{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia10:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia11{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia11:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia12{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia12:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia13{
-border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia13:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia14{
-  border: 1px solid black;
-  background-color: #D6D6D6;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia14:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-
-
-.dia15{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-.dia15:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia16{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia16:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia17{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia17:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia18{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia18:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia19{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia19:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia20{
-border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia20:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia21{
-  border: 1px solid black;
-  background-color: #5A95CA;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia21:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-
-.dia22{
-border: 1px solid black;
-  border-bottom-left-radius: 10px;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia22:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia23{
-border: 1px solid black;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia23:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia24{
-border: 1px solid black;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia24:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia25{
-border: 1px solid black;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia25:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia26{
-border: 1px solid black;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia26:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia27{
-border: 1px solid black;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia27:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-.dia28{
-  border: 1px solid black;
-  border-bottom-right-radius: 10px;
-  background-color: #E3AC3F;
-  color: black;
-  font-size: 6vw;
-  width: 11vw;
-  float: left;
-  margin: 0px 0px 0px 0px;
-  padding: 6px;
-  overflow: hidden;
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: 0.1s;
-  transition: all 0.1s;
-}
-
-.dia28:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1);
-      }
-
-
- #semana1{
+  #linha_plasma {
     display: flex;
     justify-content: center;
     color: white;
   }
 
-#semana2{
+  .dia1 {
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia1:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia2 {
+    border: 1px solid black;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia2:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia3 {
+    border: 1px solid black;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia3:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia4 {
+    border: 1px solid black;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia4:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia5 {
+    border: 1px solid black;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia5:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia6 {
+    border: 1px solid black;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia6:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia7 {
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    background-color: #E64A4D;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia7:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia8 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia8:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia9 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia9:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia10 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia10:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia11 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia11:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia12 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia12:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia13 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia13:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia14 {
+    border: 1px solid black;
+    background-color: #D6D6D6;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia14:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia15 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia15:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia16 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia16:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia17 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia17:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia18 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia18:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia19 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia19:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia20 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia20:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia21 {
+    border: 1px solid black;
+    background-color: #5A95CA;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia21:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia22 {
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia22:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia23 {
+    border: 1px solid black;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia23:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia24 {
+    border: 1px solid black;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia24:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia25 {
+    border: 1px solid black;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia25:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia26 {
+    border: 1px solid black;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia26:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia27 {
+    border: 1px solid black;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia27:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  .dia28 {
+    border: 1px solid black;
+    border-bottom-right-radius: 10px;
+    background-color: #E3AC3F;
+    color: black;
+    font-size: 6vw;
+    width: 11vw;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 6px;
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.1s;
+    -webkit-transition: 0.1s;
+    transition: all 0.1s;
+  }
+
+  .dia28:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  #semana1 {
     display: flex;
     justify-content: center;
     color: white;
   }
 
-#semana3{
+  #semana2 {
     display: flex;
     justify-content: center;
     color: white;
   }
 
+  #semana3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
 
-#semana4{
+  #semana4 {
     display: flex;
     justify-content: center;
     color: white;
   }
 </style>
 
+<br>
+
 <div id="linha_plasma">
 
   <div class="plasma">
 
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/DALI.svg?v=1678379581">
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/DALI.svg?v=1678379581">
 
-  </span>
-  <br />
+    </span>
+    <br />
 
-  DALI
-</div>
-
-  <div class="plasma">
-
-  <span class="plasma-seli"><img id="img-seli" class="ml-2 pr-1"  width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/SELI.svg?v=1678379580">
-
-  </span>
-
-  <br />
-
-  SELI
-</div>
+    DALI
+  </div>
 
   <div class="plasma">
 
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/GAMA.svg?v=1678379581">
+    <span class="plasma-seli"><img id="img-seli" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/SELI.svg?v=1678379580">
 
-  </span>
+    </span>
 
-  <br />
+    <br />
 
-  GAMA
-</div>
-
-  <div class="plasma">
-
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/KALI.svg?v=1678379581">
-
-  </span>
-
-  <br />
-
-  KALI
-</div>
+    SELI
+  </div>
 
   <div class="plasma">
 
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/ALFA.svg?v=1678379581">
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/GAMA.svg?v=1678379581">
 
-  </span>
+    </span>
 
-  <br />
+    <br />
 
-  ALFA
-</div>
-
-  <div class="plasma">
-
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/LIMI.svg?v=1678379581">
-
-  </span>
-
-  <br />
-
-  LIMI
-</div>
+    GAMA
+  </div>
 
   <div class="plasma">
 
-  <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/SILIO.svg?v=1678379581">
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/KALI.svg?v=1678379581">
 
-  </span>
+    </span>
 
-  <br />
+    <br />
 
-  SÍLIO
-</div>
+    KALI
+  </div>
+
+  <div class="plasma">
+
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/ALFA.svg?v=1678379581">
+
+    </span>
+
+    <br />
+
+    ALFA
+  </div>
+
+  <div class="plasma">
+
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/LIMI.svg?v=1678379581">
+
+    </span>
+
+    <br />
+
+    LIMI
+  </div>
+
+  <div class="plasma">
+
+    <span class="plasma-dali"><img id="img-dali" class="ml-2 pr-1" width="" src="https://cdn.shopify.com/s/files/1/0709/8728/4761/files/SILIO.svg?v=1678379581">
+
+    </span>
+
+    <br />
+
+    SÍLIO
+  </div>
 
 </div>
 
 <div id="semana1">
-  
+
   <div class="dia1">
     1
   </div>
@@ -796,11 +877,11 @@ border: 1px solid black;
   <div class="dia7">
     7
   </div>
- 
+
 </div>
 
 <div id="semana2">
-  
+
   <div class="dia8">
     8
   </div>
@@ -822,11 +903,11 @@ border: 1px solid black;
   <div class="dia14">
     14
   </div>
- 
+
 </div>
 
 <div id="semana3">
-  
+
   <div class="dia15">
     15
   </div>
@@ -848,11 +929,11 @@ border: 1px solid black;
   <div class="dia21">
     21
   </div>
- 
+
 </div>
 
 <div id="semana4">
-  
+
   <div class="dia22">
     22
   </div>
@@ -874,5 +955,78 @@ border: 1px solid black;
   <div class="dia28">
     28
   </div>
- 
+
+</div>
+
+<br>
+
+<div id="calculakin-inputgroup-sincronario" class="mb-3 float-sm-right inputgroup-bordas">
+
+  <label id="calculakin-label-sincronario" class="mb-0 text-center" for="">Data Sincronário <span id="data-ns"></span><small class="h6 ml-1"><a href="https://blog.kinzen.com.br/"><i class="fa fa-question-circle"></i></a></small></label>
+
+  <input class="form-control px-1 text-center input-transparente  primeiro-input-bordas" id="calculakin-sincronario-ns" tabindex="5" type="number" min="1">
+
+  <input class="form-control px-1 text-center input-transparente  rounded-0" id="calculakin-sincronario-ano" tabindex="5" type="number" min="1">
+
+  <select class="date-calc-mes form-control rounded-0 px-1 text-center input-transparente" id="calculakin-sincronario-lua" tabindex="6">
+
+    <option value="1">Lua 1 - Magnética</option>
+
+    <option value="2">Lua 2 - Lunar</option>
+
+    <option value="3">Lua 3 - Elétrica</option>
+
+    <option value="4">Lua 4 - Autoexistente</option>
+
+    <option value="5">Lua 5 - Harmônica</option>
+
+    <option value="6">Lua 6 - Rítmica</option>
+
+    <option value="7">Lua 7 - Ressonante</option>
+
+    <option value="8">Lua 8 - Galáctica</option>
+
+    <option value="9">Lua 9 - Solar</option>
+
+    <option value="10">Lua 10 - Planetária</option>
+
+    <option value="11">Lua 11 - Espectral</option>
+
+    <option value="12">Lua 12 - Cristal</option>
+
+    <option value="13">Lua 13 - Cósmica</option>
+
+    <option value="0">Dia Fora do Tempo</option>
+
+  </select>
+
+  <input class="form-control px-1 text-center input-transparente  rounded-0" id="calculakin-sincronario-dia" tabindex="5" type="number" min="0" max="28" value="1">
+
+  <button class="btn btn-primary btn-sm" type="button"><i class="botao">✔</i></button>
+
+</div>
+<br>
+
+<div id="calculakin-inputgroup-gregoriano" class="mb-3 float-sm-left inputgroup-bordas">
+
+  <label id="calculakin-label-gregoriano" class="mb-0 text-center" for="">Data
+
+    Gregoriano</label>
+
+  <input class="form-control px-0 text-center input-transparente primeiro-input-bordas border-right-0" type="number" id="calculakin-gregoriano-dia">
+
+  <input class="form-control px-0 text-center input-transparente rounded-0 border-right-0 border-left-0" type="number" id="calculakin-gregoriano-mes">
+
+  <input class="form-control text-center input-transparente rounded-0 border-left-0" type="number" id="calculakin-gregoriano-ano">
+
+  <button class="btn btn-primary btn-sm" type="button"><i class="botao">✔</i></button>
+
+  <a href="" title="hoje" id="calculakin-hoje">
+
+    <i class="hoje"></i>
+
+  </a>
+
+</div>
+
 </div>
