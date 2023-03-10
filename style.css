@@ -1,158 +1,5 @@
-body {
-  padding: 100px 0;
-}
-
-.btn {
-  padding: 6px 12px 7px
-}
-
-.datepicker-wrap {
-  position: relative;
-}
-
-.ui-datepicker-trigger {
-  display: none;
-}
-
-.ui-datepicker.ui-corner-all {
-  border-radius: 0 0 6px 6px;
-}
-
-#ui-datepicker-div {
-  top: 100% !important;
-  left: 0 !important;
-}
-
-@media(min-width:768px) {
-  #ui-datepicker-div {
-    top: 100% !important;
-    left: 100% !important;
-    margin-left: -40px !important;
-  }
-}
-
-.ui-datepicker {
-  width: 17em;
-  padding: 0;
-  border: 1px solid #dadada;
-  font: 300 14px 'open sans';
-  -webkit-box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.13);
-  box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.13);
-}
-
-.ui-datepicker .ui-datepicker-header {
-  position: relative;
-  padding: 7px 0;
-  background: #fdc81b;
-  border: 0;
-  margin: -1px;
-  border-radius: 0;
-}
-
-.ui-datepicker table {
-  margin: .2em 0;
-}
-
-.ui-datepicker th {
-  color: #1e1e1e;
-}
-
-.ui-datepicker td {
-  padding: 0;
-}
-
-.ui-datepicker td span,
-.ui-datepicker td a {
-  text-align: center;
-  padding: 0;
-  height: 34px;
-  width: 34px;
-  line-height: 34px;
-}
-
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button {
-  font: 400 16px 'open sans';
-  color: #1e1e1e;
-  border-color: #fdc81b;
-  background: rgba(255, 255, 255, 0.6);
-  text-align: center;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-  border: 0;
-  background: transparent url(none);
-  color: #949094;
-}
-
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
-.ui-widget-header .ui-state-focus {
-  background: #e6e6e6;
-  color: #1e1e1e;
-}
-
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active {
-  background: #fdc81b;
-  color: #1e1e1e;
-}
-
-.ui-datepicker .ui-datepicker-prev,
-.ui-datepicker .ui-datepicker-next {
-  top: 8px;
-}
-
-.ui-widget-header .ui-state-hover,
-.ui-widget-header .ui-state-focus {
-  background: transparent none;
-  border: 0;
-  top: 8px;
-  cursor: pointer;
-}
-
-.ui-datepicker .ui-datepicker-prev-hover {
-  left: 2px;
-}
-
-.ui-datepicker .ui-datepicker-next-hover {
-  right: 2px;
-}
-
-.ui-datepicker-prev .ui-icon,
-.ui-datepicker-next .ui-icon {
-  background-image: none;
-}
-
-.ui-datepicker-prev .ui-icon:before,
-.ui-datepicker-next .ui-icon:before {
-  content: '\f0d9';
-  font-family: fontAwesome;
-  color: #fff;
-  display: block;
-  vertical-align: middle;
-  text-align: center;
-  text-indent: 0;
-}
-
-.ui-datepicker-next .ui-icon:before {
-  content: '\f0da';
-}
-
-
-
-
-  .plasma {
-    width: 11vw;
+ .plasma {
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -181,7 +28,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -203,7 +50,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -225,7 +72,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -247,7 +94,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -269,7 +116,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -291,7 +138,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -314,7 +161,7 @@ body {
     background-color: #E64A4D;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -336,7 +183,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -358,7 +205,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -380,7 +227,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -402,7 +249,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -424,7 +271,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -446,7 +293,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -468,7 +315,7 @@ body {
     background-color: #D6D6D6;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -490,7 +337,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -512,7 +359,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -534,7 +381,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -556,7 +403,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -578,7 +425,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -600,7 +447,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -622,7 +469,7 @@ body {
     background-color: #5A95CA;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -645,7 +492,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -667,7 +514,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -689,7 +536,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -711,7 +558,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -733,7 +580,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -755,7 +602,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
@@ -778,7 +625,7 @@ body {
     background-color: #E3AC3F;
     color: black;
     font-size: 6vw;
-    width: 11vw;
+    width: 13vw;
     float: left;
     margin: 0px 0px 0px 0px;
     padding: 6px;
