@@ -1,12 +1,6 @@
 <head>
 
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <title>Calendar - UI</title>
   <link href='style.css' rel='stylesheet' type='text/css'>
-
 
   <script src='script.js'></script>
 
@@ -215,23 +209,47 @@
   </div>
 
   <br>
+	
+	<div class="container">
+	<input type="text" name="categoria" placeholder="Selecione a Lua" onFocus="dropdown(0)" onBlur="dropdown(1)"/>
+	
+		<div class="dropDown">
+		<div class="listDropDown">
+			<div class="item" id="item-1" onMouseDown="category(1)" >Lua 01 - Magnética</div>
+			<div class="item" id="item-2" onMouseDown="category(2)" >Lua 02 - Lunar</div>
+			<div class="item" id="item-3" onMouseDown="category(3)" >Lua 03 - Elétrica</div>
+			<div class="item" id="item-4" onMouseDown="category(4)" >Lua 04 - Autoexistente</div>
+			<div class="item" id="item-5" onMouseDown="category(5)" >Lua 05 - Harmônica</div>
+			<div class="item" id="item-6" onMouseDown="category(6)" >Lua 06 - Rítimca</div>
+			<div class="item" id="item-7" onMouseDown="category(7)" >Lua 07 - Ressonante</div>
+			<div class="item" id="item-8" onMouseDown="category(8)" >Lua 08 - Galáctica</div>
+			<div class="item" id="item-9" onMouseDown="category(9)" >Lua 09 - Solar</div>
+			<div class="item" id="item-10" onMouseDown="category(10)" >Lua 10 - Planetária</div>
+			<div class="item" id="item-11" onMouseDown="category(11)" >Lua 11 - Espectral</div>
+			<div class="item" id="item-12" onMouseDown="category(12)" >Lua 12 - Cristal</div>
+			<div class="item" id="item-13" onMouseDown="category(13)" >Lua 13 - Cósmica</div>
+	
+		</div>
+		</div>
+		</div>
+	
+<script>
+	function category(c){
+		var item = document.getElementById('item-'+c).innerHTML;
+		document.getElementsByTagName('input')[0].value = item; 
+	}
+	
+	function dropdown(p){
+		var e = document.getElementsByClassName('dropDown')[0];
+		var d= ['block','none'];
+		
+		e.style.display = d[p];
+		var t = ['0px','0px,-10px'];
+		setTimeout(function(){
+			e.style.transform = 'translate('+t[p]+')';
+		},0);
+	
+}
 
-  <div id="data_gregoriano">
-    
-  </div>
-  
-  
-  
- <div class="container">
-        <div class="calendar-assets">
-            <h1 id="currentDate"></h1>
-            <div class="field">
-                <label for="date" ></label>
-                <form class="form-input" id="date-search" onsubmit="return setDate(this)">
-                    <input type="date" class="text-field" name="date" id="date" required>
-                   
-            </div>
-       
-    
-  
+				</script>
 </body>
