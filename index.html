@@ -106,106 +106,108 @@
 
   <div id="semana1">
 
-    <div class="dia1">
+    <button class= "btn" id="dia1"> 
       1
-    </div>
-    <div class="dia2">
+    </button>
+    <button class= "btn" id="dia2">
       2
-    </div>
-    <div class="dia3">
+    </button>
+    <button class= "btn" id="dia3">
       3
-    </div>
-    <div class="dia4">
+    </button>
+    <button class= "btn" id="dia4">
       4
-    </div>
-    <div class="dia5">
+    </button>
+    <button class= "btn" id="dia5">
       5
-    </div>
-    <div class="dia6">
+    </button>
+    <button class= "btn" id="dia6">
       6
-    </div>
-    <div class="dia7">
+    </button>
+    <button class= "btn" id="dia7">
       7
-    </div>
+    </button>
 
   </div>
 
   <div id="semana2">
 
-    <div class="dia8">
+    <button class= "btn" id="dia8">
       8
-    </div>
-    <div class="dia9">
+    </button>
+    <button class= "btn" id="dia9">
       9
-    </div>
-    <div class="dia10">
+    </button>
+    <button class= "btn" id="dia10">
       10
-    </div>
-    <div class="dia11">
+    </button>
+    <button class= "btn" id="dia11">
       11
-    </div>
-    <div class="dia12">
+    </button>
+    <button class= "btn" id="dia12">
       12
-    </div>
-    <div class="dia13">
+    </button>
+    <button class= "btn" id="dia13">
       13
-    </div>
-    <div class="dia14">
+    </button>
+    <button class= "btn" id="dia14">
       14
-    </div>
+    </button>
 
   </div>
 
   <div id="semana3">
 
-    <div class="dia15">
+    <button class= "btn" id="dia15">
       15
-    </div>
-    <div class="dia16">
+    </button>
+    <button class= "btn" id="dia16">
       16
-    </div>
-    <div class="dia17">
+    </button>
+    <button class= "btn" id="dia17">
       17
-    </div>
-    <div class="dia18">
+    </button>
+    <button class= "btn" id="dia18">
       18
-    </div>
-    <div class="dia19">
+    </button>
+    <button class= "btn" id="dia19">
       19
-    </div>
-    <div class="dia20">
+    </button>
+    <button class= "btn" id="dia20">
       20
-    </div>
-    <div class="dia21">
+    </button>
+    <button class= "btn" id="dia21">
       21
-    </div>
+    </button>
 
   </div>
 
   <div id="semana4">
 
-    <div class="dia22">
+    <button class= "btn" id="dia22">
       22
-    </div>
-    <div class="dia23">
+    </button>
+    <button class= "btn" id="dia23">
       23
-    </div>
-    <div class="dia24">
+    </button>
+    <button class= "btn" id="dia24">
       24
-    </div>
-    <div class="dia25">
+    </button>
+    <button class= "btn" id="dia25">
       25
-    </div>
-    <div class="dia26">
+    </button>
+    <button class= "btn" id="dia26">
       26
-    </div>
-    <div class="dia27">
+    </button>
+    <button class= "btn" id="dia27">
       27
-    </div>
-    <div class="dia28">
+    </button>
+    <button class= "btn" id="dia28">
       28
-    </div>
+    </button>
 
+		
+		
   </div>
 
   <br>
@@ -234,6 +236,15 @@
 		</div>
 	
 <script>
+	const btnElList = document.querySelectorAll('.btn');
+			
+			btnElList.forEach(btnEl => {
+				btnEl.addEventListener('click', () => {
+					document.querySelector('.special')?.classList.remove('special');
+					btnEl.classList.add('special');
+				});
+			});
+	
 	function category(c){
 		var item = document.getElementById('item-'+c).innerHTML;
 		document.getElementsByTagName('input')[0].value = item; 
