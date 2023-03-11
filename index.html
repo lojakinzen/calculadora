@@ -1,13 +1,13 @@
 <head>
 
-  <link href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>Calendar - UI</title>
   <link href='style.css' rel='stylesheet' type='text/css'>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js' id='jquery-min-js'> </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js' id='jquery-ui.min-js'> </script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' id='bootstrap.min.js'> </script>
+
   <script src='script.js'></script>
 
 </head>
@@ -219,5 +219,19 @@
   <div id="data_gregoriano">
     
   </div>
-
+  
+  
+  
+ <div class="container">
+        <div class="calendar-assets">
+            <h1 id="currentDate"></h1>
+            <div class="field">
+                <label for="date" ></label>
+                <form class="form-input" id="date-search" onsubmit="return setDate(this)">
+                    <input type="date" class="text-field" name="date" id="date" required>
+                   
+            </div>
+       
+    
+  
 </body>
