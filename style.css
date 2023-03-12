@@ -870,18 +870,37 @@
     color: white;
 		cursor: pointer;
   }
-
-input{
+select{
 	height: 30px;
-	width: 200px;
+	width: 175px;
 	background-color: #272626;
-	padding: 0px 0px;
+	padding: 0px 5px;
 	box-sizing: border-box;
 	border-radius: 6px;
 	outline: none;
 	color: #ccc;
 	border: 1.5px solid #5b5b5b;
-	text-align: center;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 610;
+	cursor: pointer;
+	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+input{
+	height: 30px;
+	width: 175px;
+	background-color: #272626;
+	padding: 0px 8px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	outline: none;
+	color: #ccc;
+	border: 1.5px solid #5b5b5b;
+	text-align: left;
 	font-size: 15px;
 	font-weight: 610;
 	cursor: pointer;
@@ -892,14 +911,20 @@ input{
 
 .container{
 		display: grid;
-	
+	text-align: left;
+	padding: 5px 0px;
+}
+
+#dia {
+	display: grid;
+	text-align: left;
 }
 
 ::-webkit-input-placeholder{color: #ccc}
 input::-moz-placeholder{color: #ccc}
 
 .dropDown{
-	width: 200px;
+	width: 175px;
 	height: 90px;
 	background-color: #272626;
 	border-radius: 6px;
