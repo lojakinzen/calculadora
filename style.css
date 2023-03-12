@@ -890,7 +890,7 @@ select{
 }
 
 
-input{
+input.categoria{
 	height: 30px;
 	width: 180px;
 	background-color: #272626;
@@ -913,10 +913,12 @@ input{
 		display: grid;
 	text-align: left;
 	padding: 5px 0px;
+	float: left;
 }
 
+
 #dia {
-	display: grid;
+	display: flex;
 	text-align: left;
 }
 
@@ -963,17 +965,43 @@ input::-moz-placeholder{color: #ccc}
 }
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 #date{
 	background-color: #ccc;
 	color: #292927;
 	cursor: pointer;
 }
 
+.calendar {
+  float: left;
+	padding: 4px 0px 0px 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: 1.5px solid #5b5b5b;
+	color: #ccc;
+	font-size: 15px;
+	border-radius: 6px;
+	height: 60px;
+	width: 130px
+}
 
+input.gregoriano{
+	height: 30px;
+	width: 130px;
+	margin-top: 10px;
+	background-color: #272626;
+	padding: 0px 5px;
+	box-sizing: border-box;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	outline: none;
+	color: #ccc;
+	border: 1.5px solid #5b5b5b;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 610;
+	cursor: pointer;
+	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
