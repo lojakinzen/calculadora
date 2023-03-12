@@ -2,6 +2,22 @@
 	    box-shadow: inset 0 0 10px 4px rgb(0 0 0 / 50%);
   }
 
+
+
+::-webkit-scrollbar{
+	background-color: #ccc;
+	width: 5px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #5b5b5b;
+	border-radius: 8px;
+}
+
+
+
 .plasma {
     width: 13vw;
     float: left;
@@ -21,6 +37,34 @@
   }
 
   #linha_plasma {
+    display: flex;
+    justify-content: center;
+    color: white;
+		cursor: pointer;
+  }
+
+  #semana1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+		cursor: pointer;
+  }
+
+  #semana2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+		cursor: pointer;
+  }
+
+  #semana3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+		cursor: pointer;
+  }
+
+  #semana4 {
     display: flex;
     justify-content: center;
     color: white;
@@ -843,36 +887,11 @@
     transform: scale(1.1);
   }
 
-  #semana1 {
-    display: flex;
-    justify-content: center;
-    color: white;
-		cursor: pointer;
-  }
 
-  #semana2 {
-    display: flex;
-    justify-content: center;
-    color: white;
-		cursor: pointer;
-  }
 
-  #semana3 {
-    display: flex;
-    justify-content: center;
-    color: white;
-		cursor: pointer;
-  }
-
-  #semana4 {
-    display: flex;
-    justify-content: center;
-    color: white;
-		cursor: pointer;
-  }
 select{
 	height: 30px;
-	width: 170px;
+	width: 165px;
 	background-color: #272626;
 	padding: 0px 5px;
 	box-sizing: border-box;
@@ -889,98 +908,21 @@ select{
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
-input.categoria{
-	height: 30px;
-	width: 190px;
-	background-color: #272626;
-	padding: 0px 8px;
-	box-sizing: border-box;
-	border-radius: 6px;
-	outline: none;
-	color: #ccc;
-	border: 1.5px solid #5b5b5b;
-	text-align: left;
-	font-size: 14.5px;
-	font-weight: 610;
-	cursor: pointer;
-	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.seletores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container{
-		display: grid;
-	text-align: left;
-	padding: 5px 0px;
-	float: left;
-}
-
-
-#dia {
-	display: flex;
-	text-align: left;
-}
-
-::-webkit-input-placeholder{color: #ccc}
-input::-moz-placeholder{color: #ccc}
-
-.dropDown{
-	width: 175px;
-	height: 120px;
-	background-color: #272626;
-	border-radius: 6px;
-	margin-top: 8px;
-	border: 1.5px solid #5b5b5b;
-	overflow: auto;
-	color: #ccc;
-	display: none;
-	transform: translate(0px, -10px);
-}
-::-webkit-scrollbar{
-	background-color: #ccc;
-	width: 5px;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb{
-	background-color: #5b5b5b;
-	border-radius: 8px;
-}
-
-.item{
-	height: 30px;
-	padding: 0px 5px;
-	box-sizing: border-box;
-	transition: .2s;
-	cursor: pointer;
-	font-size: 14.5px;
-}
-
-.item:hover{
-	background-color: #121212;
-	padding-top: 2px;
-	transition: .2s;
-}
-
-
-#date{
-	background-color: #ccc;
-	color: #292927;
-	cursor: pointer;
-}
-
-.calendar {
-  float: left;
+.calendario {
 	padding: 4px 0px 0px 0px;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-top: 0px;
 	border: 1.5px solid #5b5b5b;
 	color: #ccc;
 	font-size: 14.4px;
 	border-radius: 6px;
-	height: 58px;
+	height: 60px;
 	width: 120px
 }
 
@@ -1005,3 +947,30 @@ input.gregoriano{
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+#date{
+	background-color: #ccc;
+	color: #292927;
+	cursor: pointer;
+}
+
+.gregoriano {
+  display: flex;
+  border: 2px white;
+  height: 75px;
+  padding: 2px 5px 2px 2px;
+  align-itens: center;
+  
+}
+
+.sincronario{
+  display: flex;
+  padding: 2px 2px 2px 2px;
+  flex-direction: column;
+  border: 2px white;
+  height: 75px;
+  
+}
+
+#lua {
+  margin-top: 6px;
+}
