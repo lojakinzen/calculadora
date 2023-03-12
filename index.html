@@ -260,26 +260,24 @@
 	</div>
 
 	<div class="container">
-	<input type="text" class="categoria" placeholder="Selecione a Lua" onFocus="dropdown(0)" onBlur="dropdown(1)"/>
+	<select type="text" class="categoria" placeholder="Selecione a Lua" onFocus="dropdown(0)" onBlur="dropdown(1)"/>
+    
+    <option selected disabled> Selecione a Lua</option>
+    <option value="lua-01" >Lua 01 - Magnética</option>
+		<option value="lua-02" >Lua 02 - Lunar</option>
+		<option value="lua-03" >Lua 03 - Elétrica</option>
+		<option value="lua-04" >Lua 04 - Autoexistente</option>
+		<option value="lua-05" >Lua 05 - Harmônica</div>
+		<option value="lua-06" >Lua 06 - Rítimca</option>
+		<option value="lua-07" >Lua 07 - Ressonante</option>
+		<option value="lua-08" >Lua 08 - Galáctica</option>
+		<option value="lua-09" >Lua 09 - Solar</option>
+		<option value="lua-10" >Lua 10 - Planetária</option>
+		<option value="lua-11" >Lua 11 - Espectral</option>
+		<option value="lua-12" >Lua 12 - Cristal</option>
+		<option value="lua-13" >Lua 13 - Cósmica</option>
+    <option value="dia-fora-do-tempo" >Dia Fora do Tempo</option>
 	
-		<div class="dropDown">
-		<div class="listDropDown">
-			<div class="item" id="item-1" onMouseDown="category(1)" >Lua 01 - Magnética</div>
-			<div class="item" id="item-2" onMouseDown="category(2)" >Lua 02 - Lunar</div>
-			<div class="item" id="item-3" onMouseDown="category(3)" >Lua 03 - Elétrica</div>
-			<div class="item" id="item-4" onMouseDown="category(4)" >Lua 04 - Autoexistente</div>
-			<div class="item" id="item-5" onMouseDown="category(5)" >Lua 05 - Harmônica</div>
-			<div class="item" id="item-6" onMouseDown="category(6)" >Lua 06 - Rítimca</div>
-			<div class="item" id="item-7" onMouseDown="category(7)" >Lua 07 - Ressonante</div>
-			<div class="item" id="item-8" onMouseDown="category(8)" >Lua 08 - Galáctica</div>
-			<div class="item" id="item-9" onMouseDown="category(9)" >Lua 09 - Solar</div>
-			<div class="item" id="item-10" onMouseDown="category(10)" >Lua 10 - Planetária</div>
-			<div class="item" id="item-11" onMouseDown="category(11)" >Lua 11 - Espectral</div>
-			<div class="item" id="item-12" onMouseDown="category(12)" >Lua 12 - Cristal</div>
-			<div class="item" id="item-13" onMouseDown="category(13)" >Lua 13 - Cósmica</div>
-	
-		</div>
-		</div>
 		</div>
 	
 	
@@ -297,18 +295,7 @@
 		var item = document.getElementById('item-'+c).innerHTML;
 		document.getElementsByTagName('input')[0].value = item; 
 	}
-	
-	function dropdown(p){
-		var e = document.getElementsByClassName('dropDown')[0];
-		var d= ['block','none'];
-		
-		e.style.display = d[p];
-		var t = ['0px','0px,-10px'];
-		setTimeout(function(){
-			e.style.transform = 'translate('+t[p]+')';
-		},0);
-	
-}
+
 
 				</script>
 </body>
