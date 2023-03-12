@@ -872,7 +872,7 @@
   }
 select{
 	height: 30px;
-	width: 190px;
+	width: 185px;
 	background-color: #272626;
 	padding: 0px 5px;
 	box-sizing: border-box;
@@ -881,7 +881,7 @@ select{
 	color: #ccc;
 	border: 1.5px solid #5b5b5b;
 	text-align: left;
-	font-size: 15px;
+	font-size: 14.5px;
 	font-weight: 610;
 	cursor: pointer;
 	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -901,7 +901,7 @@ input.categoria{
 	color: #ccc;
 	border: 1.5px solid #5b5b5b;
 	text-align: left;
-	font-size: 15px;
+	font-size: 14.5px;
 	font-weight: 610;
 	cursor: pointer;
 	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -926,7 +926,7 @@ input.categoria{
 input::-moz-placeholder{color: #ccc}
 
 .dropDown{
-	width: 190px;
+	width: 175px;
 	height: 120px;
 	background-color: #272626;
 	border-radius: 6px;
@@ -955,7 +955,7 @@ input::-moz-placeholder{color: #ccc}
 	box-sizing: border-box;
 	transition: .2s;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 14.5px;
 }
 
 .item:hover{
@@ -978,15 +978,15 @@ input::-moz-placeholder{color: #ccc}
 	margin-bottom: 5px;
 	border: 1.5px solid #5b5b5b;
 	color: #ccc;
-	font-size: 15px;
+	font-size: 14.4px;
 	border-radius: 6px;
 	height: 58px;
-	width: 130px
+	width: 120px
 }
 
 input.gregoriano{
 	height: 30px;
-	width: 130px;
+	width: 120px;
 	margin-top: 10px;
 	background-color: #272626;
 	padding: 0px 5px 0px 5px;
@@ -997,7 +997,7 @@ input.gregoriano{
 	color: #ccc;
 	border: 0px #5b5b5b;
 	text-align: left;
-	font-size: 15px;
+	font-size: 14.5px;
 	font-weight: 610;
 	cursor: pointer;
 	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
