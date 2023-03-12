@@ -872,7 +872,7 @@
   }
 select{
 	height: 30px;
-	width: 175px;
+	width: 180px;
 	background-color: #272626;
 	padding: 0px 5px;
 	box-sizing: border-box;
@@ -892,7 +892,7 @@ select{
 
 input{
 	height: 30px;
-	width: 175px;
+	width: 180px;
 	background-color: #272626;
 	padding: 0px 8px;
 	box-sizing: border-box;
@@ -924,8 +924,8 @@ input{
 input::-moz-placeholder{color: #ccc}
 
 .dropDown{
-	width: 175px;
-	height: 90px;
+	width: 180px;
+	height: 120px;
 	background-color: #272626;
 	border-radius: 6px;
 	margin-top: 8px;
@@ -961,3 +961,19 @@ input::-moz-placeholder{color: #ccc}
 	padding-top: 2px;
 	transition: .2s;
 }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#date{
+	background-color: #ccc;
+	color: #292927;
+	cursor: pointer;
+}
+
+
+
