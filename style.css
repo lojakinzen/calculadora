@@ -872,7 +872,7 @@
   }
 select{
 	height: 30px;
-	width: 185px;
+	width: 190px;
 	background-color: #272626;
 	padding: 0px 5px;
 	box-sizing: border-box;
@@ -892,7 +892,7 @@ select{
 
 input.categoria{
 	height: 30px;
-	width: 185px;
+	width: 190px;
 	background-color: #272626;
 	padding: 0px 8px;
 	box-sizing: border-box;
@@ -926,7 +926,7 @@ input.categoria{
 input::-moz-placeholder{color: #ccc}
 
 .dropDown{
-	width: 185px;
+	width: 190px;
 	height: 120px;
 	background-color: #272626;
 	border-radius: 6px;
@@ -985,11 +985,11 @@ input::-moz-placeholder{color: #ccc}
 }
 
 input.gregoriano{
-	height: 29px;
+	height: 30px;
 	width: 130px;
 	margin-top: 10px;
 	background-color: #272626;
-	padding: 0px 5px;
+	padding: 0px 5px 0px 5px;
 	box-sizing: border-box;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
