@@ -900,8 +900,8 @@ select{
 	color: #ccc;
 	border: 1.5px solid #5b5b5b;
 	text-align: left;
-	font-size: 14.5px;
-	font-weight: 610;
+	font-size: 14px;
+	font-weight: 500;
 	cursor: pointer;
 	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -920,15 +920,15 @@ select{
 	margin-top: 0px;
 	border: 1.5px solid #5b5b5b;
 	color: #ccc;
-	font-size: 14.4px;
+	font-size: 14px;
 	border-radius: 6px;
 	height: 60px;
-	width: 120px
+	width: 114px
 }
 
 input.gregoriano{
 	height: 34px;
-	width: 120px;
+	width: 115px;
 	margin-top: 8px;
 	background-color: #272626;
 	padding: 0px 3px 0px 5px;
@@ -939,8 +939,8 @@ input.gregoriano{
 	color: #ccc;
 	border: 0px #5b5b5b;
 	text-align: left;
-	font-size: 14.5px;
-	font-weight: 610;
+	font-size: 14px;
+	font-weight: 500;
 	cursor: pointer;
 	font-family: museo_sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
